@@ -1,0 +1,14 @@
+[user]
+	name = name
+	email = abc@gmail.com
+[alias]
+	st = status
+	ch = checkout
+	br = branch
+	co = commit
+	coa = commit --amend
+	cp = cherry-pick
+	rb = rebase
+	rbc = rebase --continue
+	logg = log --graph --decorate --oneline
+	logga = log --graph --decorate --oneline --all
