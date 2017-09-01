@@ -1,10 +1,31 @@
-[user]
-	name = name
-	email = abc@gmail.com
+[push]
+	default = matching
+[core]
+	trustctime = false
+	editor = vim
+	filemode = false
+[color]
+	ui = true
+[credential]
+	helper = cache --timeout=3600
+[merge]
+	tool = vimdiff
+[mergetool]
+	keeptemporaries = false
+	keepbackups = false
+	prompt = false
+	trustexitcode = false
 [alias]
-	st = status
-	ch = checkout
+	last = log -1 --stat
+	cp = cherry-pick
+	cl = clone
+	st = status -sb
 	br = branch
+	unstage = reset HEAD --
+	dc = diff --cached
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
+
+	ch = checkout
 	co = commit
 	coa = commit --amend
 	cp = cherry-pick
@@ -12,3 +33,4 @@
 	rbc = rebase --continue
 	logg = log --graph --decorate --oneline
 	logga = log --graph --decorate --oneline --all
+	qq = log --graph --decorate --oneline --all -20
