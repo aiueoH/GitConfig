@@ -34,3 +34,7 @@
 	logg = log --graph --decorate --oneline
 	logga = log --graph --decorate --oneline --all
 	qq = log --graph --decorate --oneline --all -20
+	qqq = log --graph --decorate --oneline --all
+	ww = log --graph --decorate --oneline --all --simplify-by-decoration -20
+	www = log --graph --decorate --oneline --all --simplify-by-decoration	mgnf = merge --no-ff 
+
